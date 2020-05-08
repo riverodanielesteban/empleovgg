@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!--
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; script-src * 'unsafe-inline' 'unsafe-eval'; connect-src * 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; frame-src *; style-src * 'unsafe-inline'; font-src * data: URIs ">
+
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.bundle.min.css">
+    <!-- Path to icons -->
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Statusbar overlay -->
+        <div class="statusbar"></div>
+    
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main">
+            <!-- Initial Page, "data-name" contains page name -->
+            <div data-name="index" class="page">
+    
+                <!-- Top Navbar -->
+                <div class="navbar">
+                    <div class="navbar-bg"></div>
+                    <div class="navbar-inner">
+                        <div class="title">Empleo VGG</div>
+                    </div>
+                </div>
+        
+                <!-- Toolbar -->
+                <div class="toolbar toolbar-bottom">
+                    <div class="toolbar-inner">
+                    <!-- Toolbar links -->
+                    <a href="/about/" class="link">SOBRE LA APP</a>
+                    </div>
+                </div>
+        
+                <!-- Scrollable page content -->
+                <div class="page-content text-align-center">
+                    
+                    <div class="block">
+                    <h1>Bienvenido a Empleo VGG</h1>
+                    <h2>Busca tu empleo en tu ciudad</h2>
+                        <div>
+                        BUSCO TRABAJO<br><br>
+                        <a href="/login_persona/" class="button button-round button-fill">INICIAR SESION COMO USUARIO</a>
+                        <br><br><br>
+                        BUSCO PERSONAL<br><br>
+                        <a href="/login_empresa/" class="button button-round button-fill">INICIAR SESION COMO EMPRESA</a>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+    <!-- NO FUNCIONA <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyAE5hRigfRwIQGCzLvJHo0LM-PouHPy7mQ",
+    authDomain: "empleo-vgg.firebaseapp.com",
+    databaseURL: "https://empleo-vgg.firebaseio.com",
+    projectId: "empleo-vgg",
+    storageBucket: "empleo-vgg.appspot.com",
+    messagingSenderId: "134088435252",
+    appId: "1:134088435252:web:4fc9cf96b412e1262c4c61"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework7/js/framework7.bundle.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+</html>

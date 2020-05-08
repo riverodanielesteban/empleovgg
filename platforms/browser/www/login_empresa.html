@@ -1,0 +1,60 @@
+<div class="page" id="fondoempresa" data-name="login_empresa">
+<!-- Top Navbar -->
+        <div class="navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">Empleo VGG</div>
+          </div>
+        </div>
+<!-- Top Navbar -->
+    <div class="page-content text-align-center">
+        <div class="block">
+        <div class="block-title">INICIAR SESION - EMPRESA</div>
+            <div class="list inset">
+                <ul>
+                    <li class="item-content item-input">
+                        <div>Correo electronico</div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-input-wrap">
+                            <input id="usuario_empresa" type="text">
+                            <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div>Contraseña</div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-input-wrap">
+                            <input id="clave_empresa" type="password">
+                            <span class="input-clear-button"></span>
+                            <input type="checkbox" onclick="muestraClave1()">
+                            mostrar contraseña
+                            </div>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button id="iniciar_sesion_empresa" class="col button button-fill color-orange">INICIAR SESION</button>
+                <h3>¿No estas registrado?</h3>
+                <a href="/registro_empresa/" class="col button button-fill color-blue">REGISTRATE AQUI</button></a>
+                <br>
+                <a href="/index/" class="col button button-fill color-red">VOLVER AL PRINCIPIO</a>
+            </div>
+        </div>
+    </div>            
+</div>
+<script>
+function muestraClave1() {
+  var x = document.getElementById("clave");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>

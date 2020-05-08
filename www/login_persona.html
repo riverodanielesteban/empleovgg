@@ -1,0 +1,60 @@
+<div class="page" data-name="login_persona">
+<!-- Top Navbar -->
+        <div class="navbar">
+          <div class="navbar-bg"></div>
+          <div class="navbar-inner">
+            <div class="title">Empleo VGG</div>
+          </div>
+        </div>
+<!-- Top Navbar -->
+    <div class="page-content text-align-center">
+        <div class="block">
+        <div class="block-title">INICIAR SESION - PERSONA</div>
+            <div class="list inset">
+                <ul>
+                    <li class="item-content item-input">
+                        <div>Correo electronico</div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-input-wrap">
+                            <input id="usuario" type="text">
+                            <span class="input-clear-button"></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div>Contraseña</div>
+                    </li>
+                    <li class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-input-wrap">
+                            <input id="clave" class="pass" type="password">
+                            <span class="input-clear-button"></span>
+                            <input type="checkbox" onclick="muestraClave()">
+                            mostrar contraseña
+                            </div>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <button id="iniciar_sesion" class="col button button-fill color-orange">INICIAR SESION</button>
+                <h3>¿No estas registrado?</h3>
+                <a href="/registro_persona/" class="col button button-fill color-blue">REGISTRATE AQUI</button></a>
+                <br>
+                <a href="/index/" class="col button button-fill color-red">VOLVER AL PRINCIPIO</a>
+            </div>
+        </div>
+    </div>            
+</div>
+<script>
+function muestraClave() {
+  var x = document.getElementById("clave");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>

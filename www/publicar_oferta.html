@@ -1,0 +1,91 @@
+<!--Page-->
+<div class="page" id="fondoempresa" data-name="publicar_oferta">
+    <!-- Top Navbar -->
+    <div class="navbar">
+        <div class="navbar-bg"></div>
+        <div class="navbar-inner">
+            <div class="title">Empleo VGG</div>
+        </div>
+    </div>
+    <!-- Top Navbar -->
+    <!--Page content-->
+    <div class="page-content">
+        <div class="block-title">Publicar nueva oferta de empleo</div>
+        <div class="list no-hairlines-md">
+          <ul>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Titulo de la oferta</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="titulo_oferta">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Categoria / rubro</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="rubro">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Descripcion</div>
+                <div class="item-input-wrap">
+                  <textarea id="descripcion_puesto"></textarea>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Puestos vacantes</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="puestos_vacantes">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Requisito de edad</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="requisito_edad">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+            <li class="item-content item-input">
+                <div class="item-inner">
+                    <div class="item-title item-label">Educacion minima requerida</div>
+                    <div class="item-input-wrap input-dropdown-wrap">
+                    <select placeholder="Seleccionar..." id="nivel_educacion">
+                        <option value="0">Secundario incompleto</option>
+                        <option value="1">Secundario</option>
+                        <option value="2">Universitario / Terciario incompleto</option>
+                        <option value="3">Universitario / Terciario</option>
+                    </select>
+                    </div>
+                </div>
+            </li>
+            <li class="item-content item-input">
+              <div class="item-inner">
+                <div class="item-title item-label">Años de experiencia</div>
+                <div class="item-input-wrap">
+                  <input type="text" id="anos_experiencia">
+                  <span class="input-clear-button"></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <br>
+        <button id="publicar_oferta" class="col button button-fill color-orange">Publicar oferta</button>
+        <br>
+        <a href="/menu_empresa/" class="link col button button-fill color-red">Volver al menu</a>
+    </div>
+    <!--Page content-->
+</div>
+<!--Page-->
