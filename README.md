@@ -1,21 +1,7 @@
-# Framework 7 Template - Version 5.4.2
+# TITULO
 
-## Framework7 
+## SUB TITULO 
 
-Framework7 app created with following options:
+PARRAFO:
 
-```
-phonegap create MYAPP --template f7-v542
-
-OR
-
-cordova create MYAPP --template f7-v542 
-```
-
-
-## Documentation & Resources
-
-* [Framework7 Core Documentation](https://framework7.io/docs/)
-* [Framework7 Icons Reference](https://framework7.io/icons/)
-* [Community Forum](https://forum.framework7.io)
-
+## OTRO TITULO
